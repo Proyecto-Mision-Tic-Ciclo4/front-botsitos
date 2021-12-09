@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    padding-top: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+
+.contenedorP{
+    display: flex;
+    
+}
+.posicion{
+    display: block;
+    text-align: center;
+    width:100%;
+     
+    
+}
+.cuerpo{
+    
+    height: 100vh;
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+}

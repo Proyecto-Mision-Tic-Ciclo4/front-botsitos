@@ -1,13 +1,14 @@
 import Sidebar from 'components/Sidebar';
 import { Outlet } from 'react-router';
 import React from 'react';
+import '../styles/privatelayout.scss'
 
 const PrivateLayout = () => {
   return (
-    <div className='flex flex-col md:flex-row flex-no-wrap h-screen'>
+    <div className='contenedorP'>
       <Sidebar />
-      <div className='flex w-full h-full'>
-        <div className='w-full h-full  overflow-y-scroll'>
+      <div className='posicion'>
+        <div className='cuerpo'>
           <Outlet />
         </div>
       </div>

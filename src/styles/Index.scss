@@ -1,0 +1,49 @@
+@import './colors.scss';
+
+.container{
+    display:flex;
+    margin-left: 50px; 
+    margin-right: 50px; 
+    justify-content: space-between; 
+    
+}
+
+.center{    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background:linear-gradient(45deg,rgb(13, 13, 14), rgb(10, 10, 10),blue);
+    background-size: 400% 400%;
+    position: relative;  
+    animation: cambiar 10s ease-in-out infinite;
+}
+@keyframes cambiar{
+    0%{background-position:0 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0 50%;}
+}
+.botonIndex{
+    background-color:$colorPrincipal;
+    border-radius: 10px 0px 10px 0px;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    width: 12%;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+.botonIndex a{
+    color: white;
+    text-decoration: none;
+}  
+.botonIndex:hover {
+    background-color: $colorSecundario;
+    font-size: medium;
+} 
+
+
+
+
