@@ -8,7 +8,7 @@ import useFormData from '../../hooks/userFormData';
 import { toast } from 'react-toastify';
 import { EDITAR_USUARIO } from '../../graphql/usuarios/mutations';
 import DropDown from '../../components/Dropdown';
-import { Enum_EstadoUsuario } from '../../utils/enum';
+import { Enum_EstadoUsuario } from '../../utils/enums';
 import '../../styles/Ediciones/editarUsuario.scss'
 import {BsFillArrowLeftCircleFill} from 'react-icons/bs'
 

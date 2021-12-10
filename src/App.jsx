@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import PrivateLayout from './layouts/PrivateLayout';
-import PublicLayout from './layouts/PublicLayout'
+import PublicLayout from './layouts/PublicLayout';
+import AuthLayout from './layouts/AuthLayout';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { UserContext } from './context/userContex';
 import Index from './pages/Index'
-import IndexUsuario from './pages/Usuario/Index'
+import IndexUsuario from './pages/Usuario/Index';
 import EditarUsuario from './pages/Usuario/Editar';
+import Register from './pages/Auth/Register';
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 import './styles/tabla.css'
 
@@ -37,6 +39,9 @@ function App() {
             <Route path="/usuario" element={<PrivateLayout />}>
               <Route path="/usuario/index" element={<IndexUsuario />} />
               <Route path='/usuario/editar/:_id' element={<EditarUsuario />} />           
+            </Route>
+            <Route path="/auth" element={<AuthLayout/>}>
+              <Route path="/auth/register" element={<Register/>}/>
             </Route>
           </Routes>
         </Router>
