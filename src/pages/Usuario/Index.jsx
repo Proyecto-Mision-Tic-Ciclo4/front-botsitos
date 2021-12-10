@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import { useQuery } from '@apollo/client';
-import { GET_USUARIOS } from 'graphql/usuarios/queries';
+import { GET_USUARIOS } from "../../graphql/usuarios/queries";
 import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
-import { Enum_Rol, Enum_EstadoUsuario } from 'utils/enum';
+import { Enum_Rol, Enum_EstadoUsuario } from '../../utils/enum';
+import {GrEdit} from 'react-icons/gr'
+
 
 const IndexUsuarios = () => {
   const { data, error, loading } = useQuery(GET_USUARIOS);
@@ -22,7 +24,7 @@ const IndexUsuarios = () => {
 
   return (
     <div>
-      Datos Usuarios:
+       <h1>Datos Usuarios</h1>
       <table className='tabla'>
         <thead>
           <tr>
@@ -47,8 +49,8 @@ const IndexUsuarios = () => {
                   <td>{Enum_Rol[u.rol]}</td>
                   <td>{Enum_EstadoUsuario[u.estado]}</td>
                   <td>
-                    <Link to={`/usuarios/editar/${u._id}`}>
-                      <i className='fas fa-pen text-yellow-600 hover:text-yellow-400 cursor-pointer' />
+                    <Link to={`/usuario/editar/${u._id}`}>
+                      <GrEdit/>
                     </Link>
                   </td>
                 </tr>

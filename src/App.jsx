@@ -5,8 +5,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { UserContext } from './context/userContex';
 import Index from './pages/Index'
 import IndexUsuario from './pages/Usuario/Index'
+import EditarUsuario from './pages/Usuario/Editar';
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
-import 'styles/tabla.css'
+import './styles/tabla.css'
 
 // import PrivateRoute from 'components/PrivateRoute';
 
@@ -34,7 +35,8 @@ function App() {
               <Route path="" element={<Index />} />
             </Route>
             <Route path="/usuario" element={<PrivateLayout />}>
-              <Route path="index" element={<IndexUsuario />} />             
+              <Route path="/usuario/index" element={<IndexUsuario />} />
+              <Route path='/usuario/editar/:_id' element={<EditarUsuario />} />           
             </Route>
           </Routes>
         </Router>
