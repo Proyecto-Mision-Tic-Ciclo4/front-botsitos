@@ -6,7 +6,8 @@ import Logo1 from 'media/botsitos.jpg'
 const SidebarLinks = () => {
   return (
     <ul className='mt-12'>
-      <SidebarRoute to='' title='Perfil' icon='fas fa-home' />      
+      <SidebarRoute to='' title='Inicio' icon='fas fa-home' />      
+      <SidebarRoute to='/editar' title='Editar perfil' icon='fas fa-edit' />      
       <PrivateComponent roleList={['ADMINISTRADOR']}>
         <SidebarRoute to='/usuarios' title='Usuarios' icon='fas fa-user' />
       </PrivateComponent>
@@ -40,10 +41,10 @@ const Logout = () => {
 const Logo = () => {
   return (
     <div className='py-3 w-full flex flex-col items-center justify-center'>
-      <img src={Logo1} alt='Logo' width="250" height={250} />     
+      <img src={Logo1} alt='Logo' width="400" height="300" />     
     </div>
   );
-};
+}
 
 const Sidebar = () => {
   const [open, setOpen] = useState(true);

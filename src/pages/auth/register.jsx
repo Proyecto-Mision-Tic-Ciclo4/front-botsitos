@@ -33,7 +33,7 @@ const Register = () => {
   }, [dataMutation, setToken, navigate]);
 
   return (
-    <div className='flex flex-col h-full w-full items-center justify-center'>
+    <div className='register flex flex-col h-full w-full items-center justify-center'>
       <h1 className='text-3xl font-bold my-4'>Regístrate</h1>
       <form className='flex flex-col' onSubmit={submitForm} onChange={updateFormData} ref={form}>
         <div className='grid grid-cols-2 gap-5'>

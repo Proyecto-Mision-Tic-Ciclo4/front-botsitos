@@ -46,8 +46,7 @@ const IndexProyectos = () => {
       </div>
     );
   }
-
-  return <></>;
+   return <> no hay proyectos</>;
 };
 
 const AccordionProyecto = ({ proyecto }) => {

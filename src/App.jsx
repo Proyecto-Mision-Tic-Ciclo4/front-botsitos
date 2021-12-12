@@ -5,11 +5,9 @@ import { UserContext } from 'context/userContext';
 import { ApolloProvider, ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import Index from 'pages/Index';
-import Page2 from 'pages/Page2';
-import IndexCategory1 from 'pages/category1/Index';
-import Category1 from 'pages/category1/CategoryPage1';
 import IndexUsuarios from 'pages/usuarios';
 import EditarUsuario from 'pages/usuarios/editar';
+import EditarPerfil from 'pages/editar/editarPerfil'
 import AuthLayout from 'layouts/AuthLayout';
 import Register from 'pages/auth/register';
 import Login from 'pages/auth/login';
@@ -82,12 +80,10 @@ function App() {
                 <Route path='' element={<Index />} />
                 <Route path='/usuarios' element={<IndexUsuarios />} />
                 <Route path='/usuarios/editar/:_id' element={<EditarUsuario />} />
+                <Route path='/editar' element={<EditarPerfil/>} />
                 <Route path='/proyectos' element={<IndexProyectos />} />
                 <Route path='/proyectos/nuevo' element={<NuevoProyecto />} />
-                <Route path='/inscripciones' element={<IndexInscripciones />} />
-                <Route path='page2' element={<Page2 />} />
-                <Route path='category1' element={<IndexCategory1 />} />
-                <Route path='category1/page1' element={<Category1 />} />
+                <Route path='/inscripciones' element={<IndexInscripciones />} />                
               </Route>
               <Route path='/auth' element={<AuthLayout />}>
                 <Route path='register' element={<Register />} />
