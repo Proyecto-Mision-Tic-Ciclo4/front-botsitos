@@ -2,21 +2,18 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useAuth } from 'context/authContext';
 import PrivateComponent from './PrivateComponent';
-
+import Logo1 from 'media/botsitos.jpg'
 const SidebarLinks = () => {
   return (
     <ul className='mt-12'>
-      <SidebarRoute to='' title='Inicio' icon='fas fa-home' />
+      <SidebarRoute to='' title='Perfil' icon='fas fa-home' />      
       <PrivateComponent roleList={['ADMINISTRADOR']}>
         <SidebarRoute to='/usuarios' title='Usuarios' icon='fas fa-user' />
       </PrivateComponent>
       <SidebarRoute to='/proyectos' title='Proyectos' icon='fas fa-smile-wink' />
       <PrivateComponent roleList={['ADMINISTRADOR', 'LIDER']}>
         <SidebarRoute to='/inscripciones' title='Aprobacion Inscripciones' icon='fas fa-user' />
-      </PrivateComponent>
-      <SidebarRoute to='/page2' title='Pagina2' icon='fas fa-smile-wink' />
-      <SidebarRoute to='/category1' title='Catego 1' icon='fab fa-amazon' />
-      <SidebarRoute to='/category1/page1' title='Test' icon='fas fa-car' />
+      </PrivateComponent>      
       <Logout />
     </ul>
   );
@@ -43,8 +40,7 @@ const Logout = () => {
 const Logo = () => {
   return (
     <div className='py-3 w-full flex flex-col items-center justify-center'>
-      <img src='logo.png' alt='Logo' className='h-16' />
-      <span className='my-2 text-xl font-bold text-center'>Título de Mi Aplicación</span>
+      <img src={Logo1} alt='Logo' width="250" height={250} />     
     </div>
   );
 };

@@ -11,5 +11,17 @@
 }
 
 .input {
-  @apply p-2 border border-indigo-200 focus:outline-none focus:border-indigo-800 rounded-md shadow-sm;
+  @apply rounded-bl-lg    p-2 border border-indigo-200 focus:outline-none focus:border-indigo-800 rounded-md shadow-sm;
+}
+
+.auth{
+  background:linear-gradient(45deg,rgb(207, 207, 230), rgb(140, 117, 204),blue);
+  background-size: 400% 400%;
+  position: relative;  
+  animation: cambiar 10s ease-in-out infinite;
+}
+@keyframes cambiar{
+  0%{background-position:0 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0 50%;}
 }
