@@ -1,5 +1,6 @@
 import Sidebar from 'components/Sidebar';
 import { Outlet } from 'react-router';
+<<<<<<< HEAD
 import React, { useEffect, useState } from 'react';
 import { ToastContainer } from 'react-toastify';
 import { useMutation } from '@apollo/client';
@@ -44,8 +45,26 @@ const PrivateLayout = () => {
         </div>
       </div>
       <ToastContainer />
+=======
+import React from 'react';
+import '../styles/privatelayout.scss'
+
+const PrivateLayout = () => {
+  return (
+    <div className='contenedorP'>
+      <Sidebar />
+      <div className='posicion'>
+        <div className='cuerpo'>
+          <Outlet />
+        </div>
+      </div>
+>>>>>>> b79c91f64cb1afbc34ac041c5af078cd18f0342e
     </div>
   );
 };
 
+<<<<<<< HEAD
 export default PrivateLayout;
+=======
+export default PrivateLayout;
+>>>>>>> b79c91f64cb1afbc34ac041c5af078cd18f0342e

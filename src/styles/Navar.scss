@@ -1,0 +1,30 @@
+@import  './colors.scss';
+
+.navbar{
+   
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+      
+}
+.text{
+   font-size: x-large;
+   text-decoration: none;
+   margin-left: 80px;
+   padding-left: 20px;
+   
+}
+.text:visited{
+   color:$HoverSecundario;
+}
+
+.text:hover{
+   color:$HoverPrincipal;
+   
+}
+
+
+
+
+
+

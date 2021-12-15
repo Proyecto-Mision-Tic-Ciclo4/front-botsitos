@@ -1,0 +1,86 @@
+@import './colors.scss';
+
+.form{
+    margin: 0 auto;
+    width: 250px;
+    border: 1px solid black;
+    border-style:groove;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+.form label{
+    margin: 2px;
+    display: block;
+    text-align: start;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.form input{
+    margin: 3px;
+    display: block;
+    width: 90%;
+    border-color: $colorPrincipal;
+    border-radius: 10px 0px 10px 0px;
+    border-style: groove;
+    font-style: italic;
+    
+}
+.botonCambio{
+    border-radius: 40px;
+    justify-self: end;
+    align-self: flex-end;
+    margin-left: 550px;
+    width: 15%;
+    padding: 10px;
+    border-style: dotted;
+    background-color: $colorPrincipal;
+    font-size: large;
+    color: white;
+    font-weight:lighter;
+    cursor: pointer;
+       
+}
+.botonCambio:hover{
+    background-color: $colorSecundario;
+    font-size: larger;
+    box-shadow: 10px red;
+}
+.Tbla{
+    background-color: turquoise;
+    
+      
+}
+
+.Tbla th{
+    border: 1px solid black;
+    padding: 10px 10px;
+}
+.Tbla td{
+    border: 1px solid black;
+    padding: 0 10px;
+}
+.Div{
+    display: flex;
+    background-color: violet;    
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px;
+
+}
+.btonRegistrar{
+    margin: 10px;
+    border-radius: 10px;
+    width: 20%;
+    padding: 10px;
+    border-style: dotted;
+    background-color: $colorPrincipal;
+    font-size: medium;
+    color: white;
+    cursor: pointer;       
+}
+.btonRegistrar:hover{
+    background-color: $colorSecundario;
+    font-size: larger;
+}

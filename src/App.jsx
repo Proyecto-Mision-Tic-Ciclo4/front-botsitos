@@ -93,6 +93,7 @@ function App() {
           </BrowserRouter>
         </UserContext.Provider>
       </AuthContext.Provider>
+
     </ApolloProvider>
   );
 }

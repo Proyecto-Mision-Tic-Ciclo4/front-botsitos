@@ -1,0 +1,51 @@
+@import './colors.scss';
+
+.contenedor{
+    background-color: black;
+    width: 35%;
+    padding-top: 20px;   
+    text-align: center;
+}
+
+.boton{
+    background-color:$colorSecundario;
+    border-radius: 10px 0px 10px 0px;
+    margin: 10px;
+    padding: 5px;
+    width: 70%;
+    cursor: pointer;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.boton:hover{
+    background-color: $HoverPrincipal;
+    font-size:large;
+    margin-left: 30px;
+}
+
+.cerrar{
+    position: relative;
+    bottom: -100px;
+    width: 50%;
+    padding: 10px;
+    background: $colorPrincipal;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    border: 2px solid black;
+    border-style: double;
+    cursor: pointer;
+    
+}
+.cerrar:hover{
+    background-color: $colorSecundario;
+    width: 60%;
+    font-size: larger;
+}
+
+
