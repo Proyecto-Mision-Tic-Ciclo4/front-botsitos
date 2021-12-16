@@ -23,13 +23,13 @@
     "react-router-dom": "^6.0.0",
     "react-scripts": "4.0.3",
     "react-toastify": "^8.1.0",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "yarn.lock": "^0.0.1-security"
   },
   "scripts": {
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -49,12 +49,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-
   },
   "devDependencies": {
     "autoprefixer": "^9",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
-
   }
 }
